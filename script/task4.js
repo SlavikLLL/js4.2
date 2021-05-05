@@ -1,19 +1,21 @@
-let number=prompt("Введите число" );
+let age= +prompt("Введите ваш возраст")
+let message;
+if(age!=age){
+    message="не правильно значение";
+}
 
-if(number == false){
-    alert("Вы ввели не число")
+  else if(age%10==0 || age%10>=5 || age %100 >=5 && age %100 <=14 ){
+    message = age + 'лет';
+    
+
 }
-else{
-    if(number===1){
-        alert(number+ "год")
-    }
-    if(number>1 && number <5){
-        alert(number+ "года")
-    }
-    if(number>=5){
-        alert(number+ "лет")
-    }
-    if(number = 0){
-        alert("Поздравляю получается недавно появились")
-    }
+
+
+ else if(age==1){
+    message=age + "год"
 }
+
+ else if(age <=4 && age !=1){
+    message= age + "года"
+}
+alert(message);
